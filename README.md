@@ -8,3 +8,14 @@
 |Currency API Gateway           |currency exchange: http://localhost:8765/currency-exchange/v1/mapping/USD/INR          |
 |                               |currency conversion: http://localhost:8765/currency-conversion/v1/mapping/USD/INR/1.5  |                                                          
 
+**Currency Conversion**
+
+curl --location --request POST 'localhost:8100/currency-conversion/authenticate' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "name": "bhanu",
+    "password": "password"
+}'
+
+curl --location --request GET 'localhost:8765/currency-conversion/v1/mapping/USD/INR/1.5' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJiaGFudSIsImV4cCI6MTYxNzY1NTc1MSwiaWF0IjoxNjE3NjM3NzUxfQ.nVSbKdx4g5fYetYSBIxNx5NF7SMQQveSVQKwBpIgwDmQVG0ic2s3satemvKvocGkEknAKGN1-rbqqlv03o8pcw'
