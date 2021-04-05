@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/currency-exchange/v1")
 public class CurrencyExchangeController {
-
     Logger logger = LogManager.getLogger(CurrencyExchangeController.class);
 
     @Autowired

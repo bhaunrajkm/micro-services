@@ -16,7 +16,8 @@ public class CurrencyExchangeServiceImpl implements CurrencyExchangeService {
     private CurrencyExchangeRepo currencyExchangeRepo;
 
     @Override
-    public CurrencyExchange getByFromAndTo(String from, String to) {
+    public CurrencyExchange getByFromAndTo(final String from,
+                                           final String to) {
         logger.info("CurrencyExchangeServiceImpl.getByFromAndTo from: " + from + ", to: " + to);
         com.bhanu.currencyexchange.entities.CurrencyExchange currency = currencyExchangeRepo.getByFromAndTo(from, to);
         CurrencyExchange currencyExchange = new CurrencyExchange();

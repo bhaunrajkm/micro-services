@@ -8,5 +8,5 @@ import java.math.BigDecimal;
 
 @Repository
 public interface CurrencyExchangeRepo extends JpaRepository<CurrencyExchange, Long> {
-    CurrencyExchange getByFromAndTo(String from, String to);
+    CurrencyExchange getByFromAndTo(final String from, final String to);
 }
