@@ -1,0 +1,1 @@
+insert into currency_exchange(id,currency_from,currency_to,rate) values(10000001, 'USD', 'INR', 65.0);
