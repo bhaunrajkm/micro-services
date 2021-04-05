@@ -1,0 +1,2 @@
+insert into user(id, name, password) values(10000001, 'bhanu', '$2a$04$EUsfhICRmeOp5biWnkO3hud0tzyQ5Tr5Q916crJ6Oj1syVUWllrCu');
+insert into role(id, role, user_id) values (10000002, 'admin', 10000001);
