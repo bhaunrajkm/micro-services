@@ -8,4 +8,8 @@ http://localhost:8000/h2-console
 
 **Currency Exchange**
 
-http://localhost:8000/api/v1/currency-exchange/mapping/USD/INR
+http://localhost:8000/currency-exchange/v1/mapping/USD/INR
+
+**Currency API Gateway**
+
+currency exchange: http://localhost:8765/currency-exchange/v1/mapping/USD/INR
