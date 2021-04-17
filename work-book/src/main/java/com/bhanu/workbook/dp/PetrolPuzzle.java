@@ -32,4 +32,5 @@ public class PetrolPuzzle {
 
         System.out.println(start);
     }
+
 }
