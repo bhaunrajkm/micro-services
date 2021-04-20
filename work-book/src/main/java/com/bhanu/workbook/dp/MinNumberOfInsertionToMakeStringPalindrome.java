@@ -2,7 +2,7 @@ package com.bhanu.workbook.dp;
 
 public class MinNumberOfInsertionToMakeStringPalindrome {
     public static void main(String[] args) {
-        final String str = "abdcae";
+        final String str = "aab";
         //output: 3
 
         int dp[][] = new int[str.length()][str.length()];
