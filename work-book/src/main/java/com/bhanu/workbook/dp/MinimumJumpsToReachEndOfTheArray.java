@@ -1,6 +1,6 @@
 package com.bhanu.workbook.dp;
 
-public class MinimumJumsToReachEndOfTheArray {
+public class MinimumJumpsToReachEndOfTheArray {
     public static void main(String[] args) {
         int[] a = {2, 3, 1, 1, 4};
         //T.C: O(n^2)
