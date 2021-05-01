@@ -2,6 +2,7 @@ package com.bhanu.workbook.genericJava;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class MinMaxAverage {
     public static void main(String[] args) {
@@ -9,7 +10,6 @@ public class MinMaxAverage {
         list.add(5);
         list.add(6);
         list.add(7);
-
 
         int max = list.stream().mapToInt(Integer::intValue).max().getAsInt();
         int min = list.stream().mapToInt(Integer::intValue).min().getAsInt();

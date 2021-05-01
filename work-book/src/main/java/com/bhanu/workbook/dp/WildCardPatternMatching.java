@@ -15,6 +15,7 @@ public class WildCardPatternMatching {
 
         int[][] dp = new int[row][col];
 
+        //Empty string with empty pattern
         dp[0][0] = 1;
 
         for (int i = 1; i < col; i++) {
