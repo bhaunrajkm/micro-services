@@ -1,4 +1,4 @@
-package com.bhanu.workbook.genericJava;
+package com.bhanu.workbook.graph;
 
 public class DFS {
     public static void main(String[] args) {
