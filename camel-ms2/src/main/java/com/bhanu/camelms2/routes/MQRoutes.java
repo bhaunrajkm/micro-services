@@ -12,7 +12,10 @@ public class MQRoutes extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("activemq:divya-q")
-                .bean(divyaQProcesser);
+//        from("activemq:divya-q")
+//                .process(divyaQProcesser);
+
+        from("kafka:myKafkaTopic")
+                .process(divyaQProcesser);
     }
 }
