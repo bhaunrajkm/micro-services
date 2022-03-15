@@ -12,7 +12,7 @@ import java.util.TreeMap;
 public class TreeHM {
 
     public static void main(String[] args) {
-        Map<Student, String> map = new TreeMap<>(Collections.reverseOrder());
+        Map<Student, String> map = new TreeMap(Collections.reverseOrder());
         map.put(new Student(2, 4), "bhanu");
         map.put(new Student(3, 5), "abcd");
 
